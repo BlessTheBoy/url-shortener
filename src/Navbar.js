@@ -35,7 +35,7 @@ function Navbar() {
             <li>Pricing</li>
             <li>Resources</li>
           </ul>
-          {true ? (
+          {false ? (
             <ul className="nav__login">
               <li className="signUp">Sign Out</li>
             </ul>

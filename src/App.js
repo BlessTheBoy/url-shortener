@@ -2,6 +2,7 @@ import "./App.css";
 import Hero from "./Hero";
 import Links from "./Links";
 import Navbar from "./Navbar";
+import Test from "./Test";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       {/* statistics */}
       {/* link boost */}
       {/* footer */}
+      {/* <Test /> */}
     </div>
   );
 }

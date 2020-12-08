@@ -6,7 +6,7 @@ function Test() {
     fetch("https://api.rebrandly.com/v1/links", {
       method: "POST",
       body: JSON.stringify({
-        destination: "https://github.com/BlessTheBoy",
+        destination: "https://www.youtube.com/watch?v=UYXo5y6vp2o",
         domain: { fullName: "rebrand.ly" },
       }),
       headers: {

@@ -8,6 +8,17 @@
   margin: 0 auto;
 }
 
+.header .avatarwrap {
+  display: flex;
+  align-items: center;
+}
+
+.header .avatarwrap .MuiAvatar-root {
+  margin-right: 1.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
 .header__logo {
   padding-top: 5px;
   margin-right: 2.8rem !important;
@@ -49,6 +60,12 @@
 
 .header__nav li.signUp:hover {
   opacity: 0.8;
+}
+
+@media screen and (min-width: 53.125rem) {
+  .avatarwrap .MuiAvatar-root {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 53.125rem) {

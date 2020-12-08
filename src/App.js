@@ -1,5 +1,6 @@
 import "./App.css";
 import Features from "./Features";
+import Footer from "./Footer";
 import GetStarted from "./GetStarted";
 import Hero from "./Hero";
 import Links from "./Links";
@@ -14,6 +15,7 @@ function App() {
       <Links />
       <Features />
       <GetStarted />
+      <Footer />
       {/* statistics */}
       {/* link boost */}
       {/* footer */}

@@ -1,0 +1,107 @@
+@import "variables";
+
+.footer {
+  background-color: $VeryDarkBlue;
+  color: white;
+  padding-bottom: 2rem;
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 0.8rem;
+    .footer__logo {
+      margin: 3rem auto 2rem;
+    }
+
+    .footer__links {
+      ul {
+        margin-bottom: 2rem;
+        list-style: none;
+        li {
+          margin: 0 auto;
+          margin-bottom: 0.3rem;
+          opacity: 0.8;
+          transition: all ease-in-out 0.2s;
+          cursor: pointer;
+          width: fit-content;
+          &:hover {
+            transform: scale(1.01);
+            opacity: 0.6;
+          }
+        }
+        .listHead {
+          margin-bottom: 0.5rem;
+          font-size: 0.9rem;
+          font-weight: 700;
+          opacity: 1;
+        }
+      }
+    }
+
+    .socialLinks {
+      display: flex;
+      justify-content: center;
+      a {
+        margin-right: 1rem;
+        transition: all ease-in-out 0.2s;
+        svg {
+          width: 25px;
+          height: 25px;
+          object-fit: contain;
+          fill: white;
+          &:hover {
+            transform: scale(1.1);
+            fill: $Cyan;
+          }
+        }
+      }
+    }
+  }
+  &__attribution {
+    font-size: 0.6rem;
+    text-align: center;
+    a {
+      text-decoration: none;
+      color: white;
+      &:hover {
+        color: $Cyan;
+      }
+    }
+    .brandLogo {
+      width: 70px;
+      margin-bottom: -10px;
+      fill: white;
+      &:hover {
+        fill: $Cyan;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 53.125rem) {
+  .footer {
+    &__main {
+      width: 90%;
+      margin: 0 auto;
+      max-width: 1000px;
+      padding: 3rem 0 2rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .footer__links {
+        display: flex;
+        ul {
+          margin-right: 3rem;
+        }
+      }
+
+      .footer__logo {
+        margin: 0;
+      }
+    }
+  }
+}

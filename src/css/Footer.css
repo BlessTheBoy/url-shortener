@@ -1,0 +1,112 @@
+.footer {
+  background-color: #35323e;
+  color: white;
+  padding-bottom: 2rem;
+}
+
+.footer__main {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.footer__main .footer__logo {
+  margin: 3rem auto 2rem;
+}
+
+.footer__main .footer__links ul {
+  margin-bottom: 2rem;
+  list-style: none;
+}
+
+.footer__main .footer__links ul li {
+  margin: 0 auto;
+  margin-bottom: 0.3rem;
+  opacity: 0.8;
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.footer__main .footer__links ul li:hover {
+  transform: scale(1.01);
+  opacity: 0.6;
+}
+
+.footer__main .footer__links ul .listHead {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  opacity: 1;
+}
+
+.footer__main .socialLinks {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__main .socialLinks a {
+  margin-right: 1rem;
+  transition: all ease-in-out 0.2s;
+}
+
+.footer__main .socialLinks a svg {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  fill: white;
+}
+
+.footer__main .socialLinks a svg:hover {
+  transform: scale(1.1);
+  fill: #2acfcf;
+}
+
+.footer__attribution {
+  font-size: 0.6rem;
+  text-align: center;
+}
+
+.footer__attribution a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer__attribution a:hover {
+  color: #2acfcf;
+}
+
+.footer__attribution .brandLogo {
+  width: 70px;
+  margin-bottom: -10px;
+  fill: white;
+}
+
+.footer__attribution .brandLogo:hover {
+  fill: #2acfcf;
+}
+
+@media screen and (min-width: 53.125rem) {
+  .footer__main {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 3rem 0 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .footer__main .footer__links {
+    display: flex;
+  }
+  .footer__main .footer__links ul {
+    margin-right: 3rem;
+  }
+  .footer__main .footer__logo {
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=Footer.css.map */

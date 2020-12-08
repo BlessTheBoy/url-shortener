@@ -1,0 +1,181 @@
+@import "variables";
+
+.header {
+  padding: 1.5rem 1.5rem 0.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+
+  &__logo {
+    padding-top: 5px;
+    margin-right: 2.8rem !important;
+  }
+  &__nav {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    ul {
+      display: flex;
+      align-items: center;
+    }
+    li {
+      margin-right: 2.5rem;
+      cursor: pointer;
+      font-size: 0.8rem;
+      opacity: 0.6;
+
+      &:hover {
+        opacity: 1;
+        transform: scale(1.05);
+      }
+    }
+
+    li.signUp {
+      font-weight: 700;
+      padding: 0.4rem 1.5rem;
+      border-radius: 100px;
+      outline: none;
+      border: none;
+      color: white;
+      background-color: $Cyan;
+      opacity: 1;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 53.125rem) {
+  .header {
+    padding: 0.8rem 1.5rem 0.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+
+    &__logo {
+      padding-top: 5px;
+    }
+    .menu-btn {
+      position: relative;
+      // top: 1rem;
+      // right: 1rem;
+      z-index: 1;
+      height: 20px;
+      width: 28px;
+      cursor: pointer;
+      @include transition-ease;
+
+      &__burger {
+        position: absolute;
+        top: 0.5rem;
+        right: 0;
+        width: 28px;
+        height: 3px;
+        background: $DarkViolet;
+        @include transition-ease;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: -8px;
+          width: 28px;
+          height: 3px;
+          background: $DarkViolet;
+          @include transition-ease;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 8px;
+          width: 20px;
+          height: 3px;
+          background: $DarkViolet;
+          @include transition-ease;
+        }
+
+        &.open {
+          transform: rotate(720deg);
+          background: transparent;
+
+          &::before {
+            transform: rotate(45deg) translate(5px, 8px);
+          }
+
+          &::after {
+            width: 28px;
+            transform: rotate(-45deg) translate(3px, -7px);
+          }
+        }
+      }
+    }
+
+    .header__nav {
+      visibility: hidden;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 100%;
+      width: 80%;
+      margin: 0 10%;
+      padding: 1rem 1rem;
+      border-radius: 6px;
+      background-color: $DarkViolet;
+      z-index: 1;
+      color: white;
+      text-align: center;
+      @include transition-ease();
+      transform: translateY(-100%);
+      opacity: 0;
+
+      &.open {
+        visibility: visible;
+        transform: translateY(0);
+        opacity: 1;
+      }
+      ul {
+        padding: 0.3rem;
+        display: block;
+      }
+      li {
+        padding: 0.5rem;
+        font-weight: 700;
+        font-size: 0.9rem;
+        margin: 0 auto;
+        margin-bottom: 0.8rem;
+        cursor: pointer;
+
+        &:hover {
+          color: $Cyan;
+        }
+      }
+
+      li.signUp {
+        font-weight: 700;
+        padding: 0.4rem 1.5rem;
+        border-radius: 100px;
+        outline: none;
+        border: none;
+        color: white;
+        background-color: $Cyan;
+
+        &:hover {
+          color: $Cyan;
+          background-color: white;
+        }
+      }
+
+      .nav__page {
+        border-bottom: 1px solid $GrayishViolet;
+      }
+    }
+  }
+}

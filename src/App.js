@@ -1,9 +1,17 @@
 import "./App.css";
+import Navbar from "./Navbar";
+import Test from "./Test";
 
 function App() {
   return (
     <div className="app">
-      <h1>Hello World</h1>
+      <Navbar />
+      {/* navbar */}
+      {/* hero */}
+      {/* shortener */}
+      {/* statistics */}
+      {/* link boost */}
+      {/* footer */}
     </div>
   );
 }

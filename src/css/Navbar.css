@@ -1,0 +1,168 @@
+.header {
+  padding: 1.5rem 1.5rem 0.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header__logo {
+  padding-top: 5px;
+  margin-right: 2.8rem !important;
+}
+
+.header__nav {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__nav ul {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav li {
+  margin-right: 2.5rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+.header__nav li:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.header__nav li.signUp {
+  font-weight: 700;
+  padding: 0.4rem 1.5rem;
+  border-radius: 100px;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: #2acfcf;
+  opacity: 1;
+}
+
+.header__nav li.signUp:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 53.125rem) {
+  .header {
+    padding: 0.8rem 1.5rem 0.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+  }
+  .header__logo {
+    padding-top: 5px;
+  }
+  .header .menu-btn {
+    position: relative;
+    z-index: 1;
+    height: 20px;
+    width: 28px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  }
+  .header .menu-btn__burger {
+    position: absolute;
+    top: 0.5rem;
+    right: 0;
+    width: 28px;
+    height: 3px;
+    background: #3b3054;
+    transition: all 0.5s ease-in-out;
+  }
+  .header .menu-btn__burger::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    width: 28px;
+    height: 3px;
+    background: #3b3054;
+    transition: all 0.5s ease-in-out;
+  }
+  .header .menu-btn__burger::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    width: 20px;
+    height: 3px;
+    background: #3b3054;
+    transition: all 0.5s ease-in-out;
+  }
+  .header .menu-btn__burger.open {
+    transform: rotate(720deg);
+    background: transparent;
+  }
+  .header .menu-btn__burger.open::before {
+    transform: rotate(45deg) translate(5px, 8px);
+  }
+  .header .menu-btn__burger.open::after {
+    width: 28px;
+    transform: rotate(-45deg) translate(3px, -7px);
+  }
+  .header .header__nav {
+    visibility: hidden;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 80%;
+    margin: 0 10%;
+    padding: 1rem 1rem;
+    border-radius: 6px;
+    background-color: #3b3054;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  .header .header__nav.open {
+    visibility: visible;
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .header .header__nav ul {
+    padding: 0.3rem;
+    display: block;
+  }
+  .header .header__nav li {
+    padding: 0.5rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin: 0 auto;
+    margin-bottom: 0.8rem;
+    cursor: pointer;
+  }
+  .header .header__nav li:hover {
+    color: #2acfcf;
+  }
+  .header .header__nav li.signUp {
+    font-weight: 700;
+    padding: 0.4rem 1.5rem;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: #2acfcf;
+  }
+  .header .header__nav li.signUp:hover {
+    color: #2acfcf;
+    background-color: white;
+  }
+  .header .header__nav .nav__page {
+    border-bottom: 1px solid #9e9aa7;
+  }
+}
+/*# sourceMappingURL=Navbar.css.map */

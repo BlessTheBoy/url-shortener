@@ -1,0 +1,65 @@
+.card {
+  z-index: 2;
+  background-color: white;
+  border-radius: 8px;
+  margin-top: 5rem;
+  padding: 3rem 1.5rem 2rem;
+  position: relative;
+}
+
+.card__image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #3b3054;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: calc(-3rem - 30px) auto 2rem;
+}
+
+.card__image img {
+  object-fit: contain;
+  max-width: 30px;
+}
+
+.card h4 {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #232127;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  color: #9e9aa7;
+  font-size: 0.85rem;
+  line-height: 1.8;
+}
+
+@media screen and (min-width: 53.125rem) {
+  .card {
+    height: fit-content;
+  }
+  .card:nth-child(1) {
+    margin-top: 0rem;
+  }
+  .card:nth-child(2) {
+    margin-top: 3rem;
+  }
+  .card:nth-child(3) {
+    margin-top: 6rem;
+  }
+  .card:nth-child(4) {
+    margin-top: 9rem;
+  }
+  .card:nth-child(1) {
+    margin-right: 2rem;
+  }
+  .card:nth-child(2) {
+    margin-right: 2rem;
+  }
+  .card:nth-child(3) {
+    margin-right: 2rem;
+  }
+}
+/*# sourceMappingURL=Card.css.map */

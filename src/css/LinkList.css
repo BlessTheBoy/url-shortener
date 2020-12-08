@@ -1,39 +1,5 @@
 .linkList {
   width: 80%;
-  margin: -3rem auto 2rem;
-}
-
-.link {
-  width: 100%;
-  background-color: white;
-  border-radius: 6px;
-  margin-bottom: 0.7rem;
-  font-size: 0.85rem;
-}
-
-.link__other {
-  border-top: 2px solid #efefef;
-  padding: 1rem;
-  color: #2acfcf;
-}
-
-.link__other button {
-  width: 100%;
-  padding: 0.7rem;
-  background-color: #2acfcf;
-  color: white;
-  border-radius: 4px;
-  border: none;
-  outline: none;
-  font-weight: bold;
-  font-size: 1rem;
-  margin-top: 0.5rem;
-}
-
-.link__long {
-  padding: 0.8rem 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  color: #35323e;
+  margin: -3rem auto 0;
 }
 /*# sourceMappingURL=LinkList.css.map */

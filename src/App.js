@@ -1,4 +1,5 @@
 import "./App.css";
+import Features from "./Features";
 import Hero from "./Hero";
 import Links from "./Links";
 import Navbar from "./Navbar";
@@ -10,8 +11,7 @@ function App() {
       <Navbar />
       <Hero />
       <Links />
-      {/* hero */}
-      {/* shortener */}
+      <Features />
       {/* statistics */}
       {/* link boost */}
       {/* footer */}

@@ -1,0 +1,51 @@
+@import "variables";
+
+.card {
+  z-index: 2;
+  background-color: white;
+  border-radius: 8px;
+  margin-top: 5rem;
+  padding: 3rem 1.5rem 2rem;
+  position: relative;
+  &__image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: $DarkViolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: calc(-3rem - 30px) auto 2rem;
+    img {
+      object-fit: contain;
+      max-width: 30px;
+    }
+  }
+  h4 {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: $VeryDarkViolet;
+    margin-bottom: 1rem;
+  }
+  p {
+    color: $GrayishViolet;
+    font-size: 0.85rem;
+    line-height: 1.8;
+  }
+}
+
+@media screen and (min-width: 53.125rem) {
+  .card {
+    height: fit-content;
+  }
+  @for $i from 1 through 4 {
+    .card:nth-child(#{$i}) {
+      margin-top: ($i * 3rem) - 3rem;
+    }
+  }
+  @for $i from 1 through 3 {
+    .card:nth-child(#{$i}) {
+      margin-right: 2rem;
+    }
+  }
+}

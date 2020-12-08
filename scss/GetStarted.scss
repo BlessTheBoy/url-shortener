@@ -1,0 +1,37 @@
+@import "variables";
+
+.getStarted {
+  padding: 4rem 1rem;
+  background: $DarkViolet url("../images/bg-boost-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  text-align: center;
+  h2 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  button {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.7rem 1.5rem;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: $Cyan;
+  }
+}
+
+@media screen and (min-width: 53.125rem) {
+  .getStarted {
+    background: $DarkViolet url("../images/bg-boost-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    h2 {
+      font-size: 2rem;
+    }
+  }
+}

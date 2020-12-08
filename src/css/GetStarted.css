@@ -1,0 +1,38 @@
+.getStarted {
+  padding: 4rem 1rem;
+  background: #3b3054 url("../images/bg-boost-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  text-align: center;
+}
+
+.getStarted h2 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.getStarted button {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.7rem 1.5rem;
+  border-radius: 100px;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: #2acfcf;
+}
+
+@media screen and (min-width: 53.125rem) {
+  .getStarted {
+    background: #3b3054 url("../images/bg-boost-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .getStarted h2 {
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=GetStarted.css.map */

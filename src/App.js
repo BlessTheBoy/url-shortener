@@ -1,5 +1,6 @@
 import "./App.css";
 import Features from "./Features";
+import GetStarted from "./GetStarted";
 import Hero from "./Hero";
 import Links from "./Links";
 import Navbar from "./Navbar";
@@ -12,6 +13,7 @@ function App() {
       <Hero />
       <Links />
       <Features />
+      <GetStarted />
       {/* statistics */}
       {/* link boost */}
       {/* footer */}

@@ -1,0 +1,39 @@
+@import "variables";
+
+.linkInput {
+  width: 80%;
+  //   max-width: 800px;
+  margin: 0 auto;
+  padding: 1.4rem;
+  border-radius: 8px;
+  background: $DarkViolet url("../images/bg-shorten-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  transform: translateY(-50%);
+  //   margin-top: 7rem;
+  &__form {
+    display: flex;
+    flex-direction: column;
+    input {
+      font-size: 0.9rem;
+      padding: 0.3rem 1.5rem;
+      height: 40px;
+      border-radius: 4px;
+      outline: none;
+      border: none;
+      margin-bottom: 16px;
+    }
+    button {
+      font-size: 1rem;
+      font-weight: 700;
+      height: 40px;
+      padding: 0.7rem 1.5rem;
+      border-radius: 4px;
+      outline: none;
+      border: none;
+      color: white;
+      background-color: $Cyan;
+      cursor: pointer;
+    }
+  }
+}

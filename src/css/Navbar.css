@@ -156,6 +156,7 @@
     border: none;
     color: white;
     background-color: #2acfcf;
+    margin-top: 0.7rem;
   }
   .header .header__nav li.signUp:hover {
     color: #2acfcf;

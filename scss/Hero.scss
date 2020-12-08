@@ -1,0 +1,68 @@
+@import "variables";
+
+.banner {
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 9rem;
+  &__image {
+    width: 140%;
+    object-fit: contain;
+    padding-left: 1rem;
+  }
+  &__text {
+    padding: 1rem;
+    text-align: center;
+    h1 {
+      font-size: 2.5rem;
+      line-height: 1.2;
+      font-weight: 700;
+      padding: 0.5rem;
+      color: $VeryDarkViolet;
+    }
+    p {
+      font-size: 1.05rem;
+      line-height: 1.5;
+      margin: 0.2rem 0 1.8rem;
+      color: $Gray;
+      padding: 0 0.8rem;
+    }
+    button {
+      font-size: 1rem;
+      font-weight: 700;
+      padding: 0.7rem 1.5rem;
+      border-radius: 100px;
+      outline: none;
+      border: none;
+      color: white;
+      background-color: $Cyan;
+    }
+  }
+}
+
+@media screen and (min-width: 53.125rem) {
+  .banner {
+    margin-top: 2rem;
+    overflow: visible;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding-left: 5%;
+    margin-left: 0;
+
+    &__image {
+      margin-right: -23%;
+      width: 110%;
+    }
+    &__text {
+      text-align: left;
+      h1 {
+        font-size: 2.75rem;
+      }
+      button {
+        margin-left: 1rem;
+      }
+    }
+  }
+}

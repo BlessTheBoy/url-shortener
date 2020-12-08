@@ -1,0 +1,71 @@
+.banner {
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 9rem;
+}
+
+.banner__image {
+  width: 140%;
+  object-fit: contain;
+  padding-left: 1rem;
+}
+
+.banner__text {
+  padding: 1rem;
+  text-align: center;
+}
+
+.banner__text h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 700;
+  padding: 0.5rem;
+  color: #232127;
+}
+
+.banner__text p {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  margin: 0.2rem 0 1.8rem;
+  color: #bfbfbf;
+  padding: 0 0.8rem;
+}
+
+.banner__text button {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.7rem 1.5rem;
+  border-radius: 100px;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: #2acfcf;
+}
+
+@media screen and (min-width: 53.125rem) {
+  .banner {
+    margin-top: 2rem;
+    overflow: visible;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding-left: 5%;
+    margin-left: 0;
+  }
+  .banner__image {
+    margin-right: -23%;
+    width: 110%;
+  }
+  .banner__text {
+    text-align: left;
+  }
+  .banner__text h1 {
+    font-size: 2.75rem;
+  }
+  .banner__text button {
+    margin-left: 1rem;
+  }
+}
+/*# sourceMappingURL=Hero.css.map */

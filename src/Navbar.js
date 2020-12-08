@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import "./css/Navbar.css";
+import logo from "./images/logo.svg";
 
 function Navbar() {
   let showMenu = false;
@@ -23,7 +24,7 @@ function Navbar() {
     <div>
       <header className="header">
         <div className="header__logo">
-          <img src="images/logo.svg" alt="" />
+          <img src={logo} alt="" />
         </div>
         <div className="menu-btn" onClick={toggleMenu}>
           <span ref={hamBurger} className="menu-btn__burger"></span>
@@ -34,10 +35,16 @@ function Navbar() {
             <li>Pricing</li>
             <li>Resources</li>
           </ul>
-          <ul className="nav__login">
-            <li>Login</li>
-            <li className="signUp">Sign Up</li>
-          </ul>
+          {true ? (
+            <ul className="nav__login">
+              <li className="signUp">Sign Out</li>
+            </ul>
+          ) : (
+            <ul className="nav__login">
+              <li>Login</li>
+              <li className="signUp">Sign Up</li>
+            </ul>
+          )}
         </nav>
       </header>
     </div>

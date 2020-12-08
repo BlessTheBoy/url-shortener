@@ -1,0 +1,9 @@
+@import "variables";
+.links {
+  width: 100%;
+  background-color: #efefef;
+  &__container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}

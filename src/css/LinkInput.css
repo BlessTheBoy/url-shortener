@@ -21,7 +21,19 @@
   border-radius: 4px;
   outline: none;
   border: none;
+}
+
+.linkInput__form input.error {
+  border: 2px solid #f46262;
+}
+
+.linkInput__form small {
   margin-bottom: 16px;
+  color: #f46262;
+}
+
+.linkInput__form small.success {
+  color: lawngreen;
 }
 
 .linkInput__form button {

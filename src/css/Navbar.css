@@ -8,15 +8,9 @@
   margin: 0 auto;
 }
 
-.header .avatarwrap {
-  display: flex;
-  align-items: center;
-}
-
-.header .avatarwrap .MuiAvatar-root {
-  margin-right: 1.5rem;
-  font-size: 0.9rem;
-  cursor: pointer;
+.header .router-link {
+  color: white;
+  text-decoration: none;
 }
 
 .header__logo {
@@ -66,9 +60,54 @@
   .avatarwrap .MuiAvatar-root {
     display: none;
   }
+  .nav__login {
+    display: flex;
+    align-items: center;
+  }
+  .nav__login .MuiAvatar-root {
+    margin-left: -1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  .nav__login p {
+    font-size: 0.8rem;
+    margin-right: 1rem;
+    color: #232127;
+    opacity: 0.8;
+  }
+  .nav__login p span {
+    font-family: "Oleo Script", cursive;
+    font-size: 1rem;
+  }
+  .router-link {
+    color: #232127 !important;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    opacity: 0.6;
+  }
+  .router-link:hover {
+    opacity: 1;
+    transform: scale(1.05);
+  }
 }
 
 @media screen and (max-width: 53.125rem) {
+  .avatarwrap {
+    display: flex;
+    align-items: center;
+  }
+  .avatarwrap .MuiAvatar-root {
+    margin-right: 1.5rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  .nav__login .MuiAvatar-root {
+    display: none;
+  }
+  .nav__login p {
+    display: none;
+  }
   .header {
     padding: 0.8rem 1.5rem 0.1rem;
     display: flex;
@@ -182,5 +221,69 @@
   .header .header__nav .nav__page {
     border-bottom: 1px solid #9e9aa7;
   }
+}
+
+.modal-content {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.modal-content h3 {
+  color: #232127;
+  font-family: "Oleo Script", cursive;
+  font-size: 1.5rem;
+}
+
+.modal-content button {
+  font-weight: 700;
+  padding: 0.8rem 2rem;
+  border-radius: 100px;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: #2acfcf;
+  font-size: 1rem;
+  opacity: 1;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.modal-content button:hover {
+  opacity: 0.8;
+}
+
+.modal-content .MuiAvatar-root {
+  font-size: 2.5rem;
+  margin: 0 auto 1rem;
+}
+
+.modal-content__footnote {
+  position: absolute;
+  bottom: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-left: -3rem;
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  font-size: 8px;
+  font-family: "Roboto", sans-serif;
+}
+
+.modal-content__footnote span {
+  opacity: 0.2;
+  margin: 0 0.2rem;
+}
+
+.modal-content__footnote .modal-logo {
+  fill: black;
+  fill-opacity: 0.2;
+}
+
+.modal-content__footnote .modal-logo:hover {
+  fill: #232127;
+  fill-opacity: 1;
 }
 /*# sourceMappingURL=Navbar.css.map */

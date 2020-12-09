@@ -19,7 +19,7 @@ function App() {
     const unsubscribe = auth.onAuthStateChanged(function (newuser) {
       if (newuser) {
         setUser(newuser);
-      }
+      } else setUser(null);
     });
     return () => unsubscribe();
   }, []);
@@ -29,12 +29,12 @@ function App() {
         <Router>
           <Navbar />
           <Switch>
-            <Route path="/signup">
+            <Route path="/signin">
               <SignUp />
             </Route>
             <Route path="/">
               <Hero />
-              <Links />
+              <Links user={user} />
               <Features />
               <GetStarted />
               <Footer />

@@ -37,9 +37,10 @@
   overflow: hidden;
   text-overflow: ellipsis;
   color: #35323e;
+  max-width: 500px;
 }
 
-.link:nth-child(3n) {
+.link:last-child {
   margin-bottom: 0;
 }
 

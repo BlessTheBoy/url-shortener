@@ -35,9 +35,10 @@
     overflow: hidden;
     text-overflow: ellipsis;
     color: $VeryDarkBlue;
+    max-width: 500px;
   }
 }
-.link:nth-child(3n) {
+.link:last-child {
   margin-bottom: 0;
 }
 @media screen and (min-width: 53.125rem) {

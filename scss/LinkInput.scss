@@ -21,7 +21,16 @@
       border-radius: 4px;
       outline: none;
       border: none;
+    }
+    input.error {
+      border: 2px solid $Red;
+    }
+    small {
       margin-bottom: 16px;
+      color: $Red;
+    }
+    small.success {
+      color: lawngreen;
     }
     button {
       font-size: 1rem;

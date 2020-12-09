@@ -1,69 +1,7 @@
-.container-form {
-  width: 80%;
-  max-width: 600px;
-  margin: 2rem auto;
-  padding: 2rem 1.5rem;
-  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.6);
-  background-color: white;
-  border-radius: 10px;
-}
-
-.container-form h1 {
-  color: #232127;
-}
-
-.container-form .input-container {
-  display: flex;
-  flex-direction: column;
-  justify-items: flex-start;
-  margin-bottom: 1rem;
-}
-
-.container-form .input-container label {
-  text-align: left;
-  padding-left: 1rem;
-  margin-bottom: 0.4rem;
-  color: #35323e;
-}
-
-.container-form .input-container .inputs {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.container-form .input-container .inputs input {
-  flex: 1;
-  flex-basis: 210px;
-  margin-bottom: 0.2rem;
-}
-
-.container-form button {
-  background-color: #2acfcf;
-  color: white !important;
-  border: none;
-  outline: none;
-  border-radius: 3rem;
-  padding: 0.75rem 2rem;
-  cursor: pointer;
-  margin-top: 1rem;
-  font-size: 0.8rem;
-}
-
-.container-form input {
-  padding: 0.6rem 1.2rem;
-  outline: none;
-  border: 1px solid #2acfcf;
-  border-radius: 100px;
-  background: transparent;
-}
-
 .container-main {
-  text-align: center;
-  margin-top: 2rem;
-}
-
-.container-main h1 {
-  margin: 0rem auto 1rem;
-  font-family: "Oleo Script", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 85vh;
 }
 /*# sourceMappingURL=SignUp.css.map */

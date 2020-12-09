@@ -5,7 +5,9 @@ function GetStarted() {
   return (
     <div className="getStarted">
       <h2>Boost your links today</h2>
-      <button>Get Started</button>
+      <a href="#linkInput">
+        <button>Get Started</button>
+      </a>
     </div>
   );
 }

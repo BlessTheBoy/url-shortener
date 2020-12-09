@@ -10,6 +10,7 @@ import Test from "./Test";
 import SignUp from "./SignUp";
 import { auth } from "./firebase";
 import { createContext, useEffect, useState } from "react";
+import FullLinkList from "./FullLinkList.js";
 
 export const userContext = createContext();
 
@@ -31,6 +32,9 @@ function App() {
           <Switch>
             <Route path="/signin">
               <SignUp />
+            </Route>
+            <Route path="/links">
+              <FullLinkList user={user} />
             </Route>
             <Route path="/">
               <Hero />

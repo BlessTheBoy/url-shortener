@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,aAAa,CAAC;EACZ,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,cAAc;CAOvB;;AATD,AAGE,aAHW,CAGX,EAAE,CAAC;EACD,kBAAkB,EAAE,GAAG,CAAC,GAAG,CAAC,IAAI,CAAC,GAAG,CAAC,kBAAkB;EACvD,eAAe,EAAE,GAAG,CAAC,GAAG,CAAC,IAAI,CAAC,GAAG,CAAC,kBAAkB;EACpD,UAAU,EAAE,GAAG,CAAC,GAAG,CAAC,IAAI,CAAC,GAAG,CAAC,kBAAkB;EAC/C,aAAa,EAAE,MAAM;CACtB",
+    "sources": [
+        "../../scss/FullLinkList.scss",
+        "../../scss/_variables.scss"
+    ],
+    "names": [],
+    "file": "FullLinkList.css"
+}

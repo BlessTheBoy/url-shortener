@@ -17,7 +17,9 @@ function Hero() {
             Build your brand’s recognition and get detailed insights on how your
             links are performing.
           </p>
-          <button>Get Started</button>
+          <a href="#linkInput">
+            <button>Get Started</button>
+          </a>
         </div>
       </section>
     </div>

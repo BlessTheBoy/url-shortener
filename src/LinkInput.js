@@ -59,7 +59,7 @@ function LinkInput({ user }) {
     //shorten link
   };
   return (
-    <div className="linkInput">
+    <div className="linkInput" id="linkInput">
       <form className="linkInput__form">
         <input
           className="linkInput__input"
